@@ -26,23 +26,43 @@ body{
    margin-right: auto;
 }
 
-header, ul, nav, li, a {
+/*header, ul, nav, li, a {
    box-sizing: border-box;
 }
-
+/*
 /* CSS Grid Styles */
-
-
-
-
-
+img{
+   display: block;
+}
+body{
+   display: grid;
+   grid-template-columns: 1/4fr 1/4fr 1/4fr 1/4fr;
+}
+img#logo{
+   grid-column: span 3;
+   width: 100%;
+}
 
 /* Horizontal Navigation List Styles */
+nav.horizontal, footer{
+   grid-column: span 4;
+}
+aside{
+   grid-column: span 2;
+}
 
-
+nav.horizontal li{
+   display:block;
+   width: 12.5%;
+   float: left;
+}
 
 /* Section Styles */
 
+section img{
+   width:50%;
+   margin: 0 auto 0 auto;
+}
 
 
 
